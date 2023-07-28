@@ -23,6 +23,16 @@ nav .quotes{
     align-items: center;
     justify-content: space-between;
 }
+nav .quotes #new{
+        background-color: green;
+        color:#fff;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+}
 .container{
     position: absolute;
     top:50%;
