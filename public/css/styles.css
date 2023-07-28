@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height:8vh;
+    width:100vw;
+    background:green;
+    display :flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav h2{
+    color :white;
+    display: inline-block;
+    cursor: pointer;
+}
+nav .quotes{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 50vh;
+    width: 30vw;
+   
+}
+.container form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:10px 10px;
+    justify-content: space-evenly;
+    background: rgb(21, 170, 21);
+}
+
+.container .btn
+{
+    height: 10%;
+    width: 20%;
+    color: #fff;
+    background: rgb(1, 103, 1);
+}
+.box
+{
+    height:100vh;
+    width: 50vw;
+    position: relative;
+    margin: auto auto;
+    overflow-y:visible;
+}
+.box .item{
+    height:100px;
+    width:90%;
+    position: relative;
+    margin:15px auto;
+    background: rgba(72, 236, 238, 0.862);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box .item form{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .item form button{
+    height:40%;
+    width:40%;
+    background: rgb(1, 103, 1);
+    color:#fff;
+    cursor:pointer;
+}
+.box .item .text{
+    height:80%;
+    width:60%;
+}
+
+.box .item  .text h4{
+    margin:2% 10%;
+}
+.box .item .text p{
+    margin: 2% 5%;
+    font-size: 30px;
+    font-weight: 700;
+}
+

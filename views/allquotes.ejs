@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\styles.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <h2>Great Quotes</h2>
+        </div>
+        <div class="quotes">
+            <h2>All Quotes</h2>
+            <h2 id="new">New Quotes</h2>
+        </div>
+    </nav>
+    <h1>All Quotes</h1>
+    <div class="box">
+        <% for(var i=0; i<Quotes.length; i++) {%>
+            <div class="item">
+                    <div class="text">
+                        <p id="quote"> <%= Quotes[i].quote.slice(0,20) %> </p>
+                        <h4 id="authorName">~ <%=  Quotes[i].author %></h4>
+                    </div>
+                    <form id="form" action="/viewquote" method="post">
+                        <input id="input" type="hidden" name="author"  value="<%= Quotes[i].author.replace(/"/g, '&quot;') %>">
+                        <input id="input" type="hidden" name="quote"  value="<%= Quotes[i].quote.replace(/"/g, '&quot;') %>">
+                        <button id="sendButton" type="submit">View full quote</button>
+                    </form>
+            </div>
+        <% } %>
+    </div>
+    
+
+    </div>
+    <script src="js\script.js"></script>
+</html>
